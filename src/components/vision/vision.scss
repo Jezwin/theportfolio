@@ -1,8 +1,14 @@
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 .content {
   
     &__wrapper {
       
       max-width: 50%;
+     
       margin-left: auto;
       margin-right: auto;
       padding-top: 10%;
@@ -17,11 +23,10 @@
     }
     
     &__image {
-      background: url("https://picsum.photos/200");
+      background: green;
     }
     
     &__bg {
-      
     opacity: 0.8;
     background-image: radial-gradient(white 8%, #696866 2%);
     background-position: 0 0;
