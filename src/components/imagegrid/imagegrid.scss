@@ -1,0 +1,71 @@
+.grid-container * {
+  border: 1px solid red;
+}
+
+@media (max-width: 992px) {
+  .grid-container {
+    display: none !important;
+  }
+
+  .grid-container--yellow-grey {
+      display: grid !important;
+  }
+}
+
+@media (min-width: 992px) {
+    .grid-container {
+      display: grid !important;
+    }
+    
+  }
+
+
+
+.grid-container {
+  max-width: 80%;
+  height: 501px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "Small Big Big Small2" "Vertical Big Big Small3" "Vertical Small4 Horizontal Horizontal";
+
+}
+
+
+
+.Big {
+  background: red;
+  grid-area: Big;
+}
+
+.Small {
+  background: blue;
+  grid-area: Small;
+}
+
+.Vertical {
+  background: yellow;
+  grid-area: Vertical;
+}
+
+.Small2 {
+  background: orange;
+  grid-area: Small2;
+}
+
+.Small3 {
+  background: green;
+  grid-area: Small3;
+}
+
+.Horizontal {
+  background: pink;
+  grid-area: Horizontal;
+}
+
+.Small4 {
+  background: grey;
+  grid-area: Small4;
+}
