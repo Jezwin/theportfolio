@@ -1,6 +1,16 @@
 .content {
   
-    &__article {
+    &__wrapper {
+      
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 10%;
+      
+      &__article{
+      padding: 10px 10px;
+      font-family: arial;
+      }
       
     }
     
