@@ -7141,6 +7141,10 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 2rem;
     border: 2px solid;
     border-radius: 50%; }
+  .modalyou--paddingyaxis-20px {
+    padding: 20px 0px; }
+  .modalyou--paddingtop-20px {
+    padding-top: 20px !important; }
   .modalyou--horizontalalign-center {
     display: flex;
     justify-content: center; }

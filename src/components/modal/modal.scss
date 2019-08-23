@@ -13,6 +13,13 @@
         border-radius: 50%;
     }
 
+    &--paddingyaxis-20px {
+        padding: 20px 0px;
+    }
+    &--paddingtop-20px {
+        padding-top: 20px !important;
+    }
+
         &--horizontalalign-center{
         display: flex;
         justify-content: center;

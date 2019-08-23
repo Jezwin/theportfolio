@@ -1,19 +1,20 @@
 .modalyou
-  .row.align-items-center.modalyou--horizontalalign-center
-    .col-3.py-6.modalyou--horizontalalign-center
-      h1 Watch the video presentation
-    .col-2.py-6.modalyou--horizontalalign-center
-      // Button trigger modal
-      button.btn.modalyou__playsvg(type='button' data-toggle='modal' data-target='#exampleModalCenter')
-        | &#9656;
-      // Modal
-      #exampleModalCenter.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
-        .modal-dialog.modal-dialog-centered(role='document')
-          .modal-content
-            .modal-header
-              button.close(type='button' data-dismiss='modal' aria-label='Close')
-                span(aria-hidden='true') &times;
-            .modal-body.modalyou--padding-0px
-              iframe(width='498px' height='315' src='//www.youtube.com/embed/YE7VzlLtp-4?autoplay=1' frameborder='0' allowfullscreen='' allow='autoplay')
-    .col-3.py-6.modalyou--horizontalalign-center
-      p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet nunc ultricies, interdum nibh in, suscipit elit. 
+  .container
+    .row.align-items-center.modalyou--horizontalalign-center.modalyou--paddingyaxis-20px
+      .col-lg-4.py-6.modalyou--horizontalalign-center.modalyou--paddingtop-20px
+        h1 Watch the video presentation
+      .col-lg-2.py-6.modalyou--horizontalalign-center.modalyou--paddingtop-20px
+        // Button trigger modal
+        button.btn.modalyou__playsvg(type='button' data-toggle='modal' data-target='#exampleModalCenter')
+          | &#9656;
+        // Modal
+        #exampleModalCenter.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+          .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+              .modal-header
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                  span(aria-hidden='true') &times;
+              .modal-body.modalyou--padding-0px
+                iframe(width='498px' height='315' src='//www.youtube.com/embed/YE7VzlLtp-4?autoplay=1' frameborder='0' allowfullscreen='' allow='autoplay')
+      .col-lg-4.py-6.modalyou--horizontalalign-center.modalyou--paddingtop-20px
+        p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet nunc ultricies, interdum nibh in, suscipit elit. 
