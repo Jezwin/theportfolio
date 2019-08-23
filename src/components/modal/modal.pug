@@ -1,11 +1,11 @@
 .modalyou
-  .row.align-items-center
-    .col
+  .row.align-items-center.modalyou--horizontalalign-center
+    .col-3.py-6.modalyou--horizontalalign-center
       h1 Watch the video presentation
-    .col
+    .col-2.py-6.modalyou--horizontalalign-center
       // Button trigger modal
-      button.btn.btn-primary(type='button' data-toggle='modal' data-target='#exampleModalCenter')
-        | Launch demo modal
+      button.btn.modalyou__playsvg(type='button' data-toggle='modal' data-target='#exampleModalCenter')
+        | &#9656;
       // Modal
       #exampleModalCenter.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
         .modal-dialog.modal-dialog-centered(role='document')
@@ -15,5 +15,5 @@
                 span(aria-hidden='true') &times;
             .modal-body.modalyou--padding-0px
               iframe(width='498px' height='315' src='//www.youtube.com/embed/YE7VzlLtp-4?autoplay=1' frameborder='0' allowfullscreen='' allow='autoplay')
-    .col
-      p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet nunc ultricies, interdum nibh in, suscipit elit. Quisque ultricies est nec facilisis faucibus. Sed magna dolor, efficitur et risus vitae, imperdiet maximus sapien.
+    .col-3.py-6.modalyou--horizontalalign-center
+      p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet nunc ultricies, interdum nibh in, suscipit elit. 

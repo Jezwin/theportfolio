@@ -5,4 +5,17 @@
         padding: 0px;
 
       }
+
+    &__playsvg{
+        padding: 6px 22px;
+        font-size: 2rem;
+        border: 2px solid;
+        border-radius: 50%;
+    }
+
+        &--horizontalalign-center{
+        display: flex;
+        justify-content: center;
+        }
+    
 }
