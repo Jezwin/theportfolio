@@ -1,25 +1,19 @@
-.modal(style={height: '500px'})
-    .row
-        .col
-            h1 Watch the video presentation
-        .col
-            // Button trigger modal
-            button.btn.btn-primary(type='button' data-toggle='modal' data-target='#exampleModalCenter')
-              | Launch demo modal
-            // Modal
-            #exampleModalCenter.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
-              .modal-dialog.modal-dialog-centered(role='document')
-                .modal-content
-                  .modal-header
-                    h5#exampleModalLongTitle.modal-title Modal title
-                    button.close(type='button' data-dismiss='modal' aria-label='Close')
-                      span(aria-hidden='true') &times;
-                  .modal-body
-                    | ...
-                  .modal-footer
-                    button.btn.btn-secondary(type='button' data-dismiss='modal') Close
-                    button.btn.btn-primary(type='button') Save changes
-
-            
-        .col
-            p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet nunc ultricies, interdum nibh in, suscipit elit. Quisque ultricies est nec facilisis faucibus. Sed magna dolor, efficitur et risus vitae, imperdiet maximus sapien.
+.modalyou
+  .row.align-items-center
+    .col
+      h1 Watch the video presentation
+    .col
+      // Button trigger modal
+      button.btn.btn-primary(type='button' data-toggle='modal' data-target='#exampleModalCenter')
+        | Launch demo modal
+      // Modal
+      #exampleModalCenter.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+          .modal-content
+            .modal-header
+              button.close(type='button' data-dismiss='modal' aria-label='Close')
+                span(aria-hidden='true') &times;
+            .modal-body.modalyou--padding-0px
+              iframe(width='498px' height='315' src='//www.youtube.com/embed/YE7VzlLtp-4?autoplay=1' frameborder='0' allowfullscreen='' allow='autoplay')
+    .col
+      p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet nunc ultricies, interdum nibh in, suscipit elit. Quisque ultricies est nec facilisis faucibus. Sed magna dolor, efficitur et risus vitae, imperdiet maximus sapien.
