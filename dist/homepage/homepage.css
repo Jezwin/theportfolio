@@ -7169,12 +7169,19 @@ a.text-dark:hover, a.text-dark:focus {
 
 .footer {
   background: #ECEBE9; }
+  .footer--paddingtopnbottom-xpercent {
+    padding-top: 10%;
+    padding-bottom: 14%; }
   .footer--horizontalalign-center {
     display: flex;
     justify-content: center; }
   .footer__caption {
     font-size: 16px;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 8%; }
+  .footer__li--padding-xpercent {
+    padding-top: 8%;
+    padding-bottom: 8%; }
 
 .artwimage {
   opacity: 0.8;
