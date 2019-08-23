@@ -3,37 +3,56 @@
     margin-left: 0px;
     margin-right: 0px;
 }
+.col {
+
+  &--paddingleftandright-0px {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+}
 .content {
   
     &__wrapper {
       
-      max-width: 50%;
+      max-width: 62%;
      
       margin-left: auto;
       margin-right: auto;
-      padding-top: 10%;
+      padding-top: 15%;
       
-      &__article{
-      padding: 10px 10px;
-      font-family: arial;
-      }
+     
       
     
       
     }
+    &__article{
+      padding: 10px 10px;
+      font-family: arial;
+      }
     
     &__image {
-      background: green;
+      //background: url("../../assets/images/vision.png");
+      //height: 500px;
+      width: 100%;
+      background-repeat: no-repeat;
+      
     }
     
     &__bg {
     opacity: 0.8;
-    background-image: radial-gradient(white 8%, #696866 2%);
+    background-image: url("../../assets/images/portfoliopattern.png");
     background-position: 0 0;
     background-size: 20px 20px;
-    height: 249px;
+    //height: 249px;
     width: 100%;
         
       
+    }
+    &__h2{
+
+      &--marginbottom-40px {
+        margin-bottom: 40px;
+      }
     }
   }
