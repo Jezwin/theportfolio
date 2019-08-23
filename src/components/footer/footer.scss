@@ -1,0 +1,13 @@
+.footer {
+    background: #ECEBE9;
+
+    &--horizontalalign-center{
+        display: flex;
+        justify-content: center;
+        }
+
+    &__caption {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
