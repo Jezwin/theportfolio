@@ -3,15 +3,17 @@
     margin-left: 0px;
     margin-right: 0px;
 }
-.col {
 
-  &--paddingleftandright-0px {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-}
 .content {
+
+  &__col {
+
+    &--paddingleftandright-0px {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  
+  }
   
     &__wrapper {
       
