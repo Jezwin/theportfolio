@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .solid {
     background:#ECEBE9;
 
@@ -8,11 +9,25 @@
     &--paddingtop-8percent {
         padding-top: 8%;
     }
+    &__iconwrapper {
+        padding: 14px 10px;
+    }
+
+    &__iconsub {
+        font-family: roboto;
+        font-size: 13px;
+        font-weight: bold;
+        padding-top: 13px;
+    }
 
     &__h1 {
 
-        &--width-50percent{
-            width: 50%;
+        font-family: 'raleway';
+        font-size: 35px;
+        font-weight: bold;
+
+        &--width-xpercent{
+            width: 46%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -23,10 +38,59 @@
         justify-content: center;
         }
     &__iconrow {
-        padding-top: 8%;
-        padding-bottom: 8%;
+        padding-top: 6%;
+        padding-bottom: 6%;
     }
 
 
 }
+
+@media (max-width:1199px) {
+
+    .solid{
+
+        &__h1 {
+            
+            &--width-xpercent{
+                width: 54%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .solid{
+
+        &__h1 {
+            
+            &--width-xpercent{
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .solid{
+
+        &__h1 {
+            
+            &--width-xpercent{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+}
+ 
  
