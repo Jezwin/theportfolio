@@ -6,6 +6,18 @@
 
       }
 
+    &__sub {
+        font-size: 15px;
+        font-family: roboto;
+    }
+
+    &__title {
+        font-family: 'raleway';
+        font-size: 28px;
+        color: #242424;
+        font-weight: bold;
+    }
+
     &__playsvg{
         padding: 6px 22px;
         font-size: 2rem;
@@ -25,4 +37,14 @@
         justify-content: center;
         }
     
+}
+
+
+@media (max-width:767px) {
+    .modalyou {
+
+        &__sub {
+            text-align: center;
+        }
+    }
 }
