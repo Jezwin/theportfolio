@@ -2,6 +2,7 @@
 
 .brand {
 font-family: 'Raleway';
+color: white !important;
 //font-size: 22px;
 //font-weight: bold;
 }
@@ -11,13 +12,39 @@ br
     margin-bottom: -20px !important;
 }
  .navbar {
+
      &__links {
         font-family: 'Raleway';
         font-size: 13px;
+        margin-top: -24px;
+
+        &--color-white {
+            color: white !important;
+        }
 
         &--paddingleftnright-6px {
             padding-left: 6px;
             padding-right: 6px;
         }
      }
+
+     &--bg-transparent {
+         background-color: grey;
+     }
+
+     &__brand {
+
+        &--marginleft-18px {
+            margin-left: 18px;
+        }
+     }
+ }
+
+ @media (max-width:991px) {
+    .navbar {
+        &__links {
+           margin-top: 0px !important;
+           text-align: center;
+ }
+}
  }
