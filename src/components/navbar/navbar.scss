@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap');
 
-.brand {
-font-family: 'Raleway';
-color: white !important;
-//font-size: 22px;
-//font-weight: bold;
-}
-br
-{   content: "A" !important;
-    display: block !important;
-    margin-bottom: -20px !important;
-}
+
  .navbar {
+     &__br {
+        content: "A" !important;
+        display: block !important;
+        margin-bottom: -20px !important;
+     }
+     &__brand {
+        font-family: 'Raleway';
+        color: white !important;
+        }
 
      &__links {
         font-family: 'Raleway';
