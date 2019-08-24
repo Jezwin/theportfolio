@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap');
+
+.brand {
+font-family: 'Raleway';
+//font-size: 22px;
+//font-weight: bold;
+}
+br
+{   content: "A" !important;
+    display: block !important;
+    margin-bottom: -20px !important;
+}
+ .navbar {
+     &__links {
+        font-family: 'Raleway';
+        font-size: 13px;
+
+        &--paddingleftnright-6px {
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+     }
+ }
