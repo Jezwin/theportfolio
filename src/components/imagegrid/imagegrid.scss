@@ -1,5 +1,3 @@
-
-
 .grid-container {
   width: 60%;
   height: auto;
@@ -16,7 +14,6 @@
   width: 100%;
   height: 100%;
 }
-
 
 .Big {
   grid-area: Big;
@@ -44,4 +41,18 @@
 
 .Small4 {
   grid-area: Small4;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .grid-container {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "Small Small2" "Big Big " "Big Big" "Horizontal Horizontal" "Vertical Small3" "Vertical Small4";
+  }
 }
