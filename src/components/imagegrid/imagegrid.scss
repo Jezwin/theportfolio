@@ -1,6 +1,6 @@
 .imagegrid {
-
-  padding: 100px 0px;
+  background: whitesmoke;
+  padding: 80px 0px;
 
   &--textalign-center{
 
@@ -8,7 +8,7 @@
   }
   &__caption {
     font-family: 'raleway';
-    font-size: 46px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     padding-bottom: 41px;
@@ -23,7 +23,7 @@
     border-left: 70px solid black;
     border-right: 70px solid black;
     font-family: roboto;
-    font-size: 15px;
+    font-size: 12px;
    
 
   }
@@ -76,6 +76,10 @@
 }
 
 @media (max-width: 768px) {
+  .imagegrid {
+
+    padding: 5% 0px;
+  }
   .grid-container {
     width: 100%;
   }
