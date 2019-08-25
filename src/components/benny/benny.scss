@@ -1,47 +1,73 @@
 .benny {
-    &__article {
-        background: #0F2027;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  &__article {
+    background-image: url("../../assets/images/gradientbg.png");
+    padding: 66px 7%;
+    color: white;
+  }
 
+  &__p{
+
+    &--marginbottom-0px {
+      margin-bottom: 0px;
     }
+  }
+  &__sub {
+    font-family: "roboto";
+    font-size: 12px;
+  }
 
-    &__content{
-        padding-top: 150px;
-        padding-bottom: 150px;
-        //padding-left: 200px;
-        //padding-right: 200px;
+
+  &__sign {
+    height: 49px;
+    width: 99px;
+    
+  }
+
+  &__caption {
+    font-family: "raleway";
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  &__content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &__col {
+    &--paddingleftandright-0px {
+      padding-left: 0px;
+      padding-right: 0px;
     }
+  }
 
-    &__col {
-
-        &--paddingleftandright-0px {
-          padding-left: 0px;
-          padding-right: 0px;
-        }
-      
-      }
-
-    &__bg {
-        opacity: 0.8;
-        background-image: url("../../assets/images/portfoliopattern.png");
-        background-position: 0 0;
-        background-size: 20px 20px;
-        //height: 249px;
-        width: 100%;
-    }
-
-    &__img{
-
-        background-image: url("../../assets/images/theman.jpg");
-        background-size: cover;
-        background-position: center;
-
-        &--heightwidth-100percent {
-
-            height: 100%;
-            width: 100%;
-            
-        }
-    }
+  &__bg {
+    //opacity: 0.8;
+    background-image: url("../../assets/images/portfoliopattern.png");
+    background-position: 0 0;
+    background-size: 20px 20px;
+    //height: 249px;
+    width: 100%;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
 }
+
+@media (max-width: 767px) {
+  .benny {
+    &__article {
+      padding: 90px 15% !important;
+    }
+  }
+}
+@media (max-width: 575px) {
+    .benny {
+      &__article {
+        padding: 30px 9% !important;
+      }
+    }
+  }
+
+
