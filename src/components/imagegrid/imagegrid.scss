@@ -1,3 +1,35 @@
+.imagegrid {
+
+  padding: 100px 0px;
+
+  &--textalign-center{
+
+  text-align: center;
+  }
+  &__caption {
+    font-family: 'raleway';
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 41px;
+    padding-top: 10px;
+    
+  }
+
+  &__a {
+    background: black;
+    color: white;
+    border: 10px solid black;
+    border-left: 70px solid black;
+    border-right: 70px solid black;
+    font-family: roboto;
+    font-size: 15px;
+   
+
+  }
+
+}
+
 .grid-container {
   width: 60%;
   height: auto;
@@ -54,5 +86,16 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "Small Small2" "Big Big " "Big Big" "Horizontal Horizontal" "Vertical Small3" "Vertical Small4";
+  }
+}
+
+@media (max-width: 375px) {
+  .imagegrid {
+
+    &__a{
+
+      border-left: 20px solid black;
+      border-right: 20px solid black;
+    }
   }
 }
