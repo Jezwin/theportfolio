@@ -3,16 +3,29 @@
     height: 100%;
   }
 
+  &__portfolio {
+    &--textdecoration-underline {
+      padding-bottom: 7px;
+      width: 15px !important;
+      border-bottom: 1px solid #fff;
+ 
+    }
+  }
+
   &__hr {
-      &--marginbottom-5rem {
-          margin-bottom: 5rem;
-      }
+    width: 91px;
+    background: white !important;
+    margin-top: 8px;
+    &--marginbottom-5rem {
+      margin-bottom: 5rem;
+    }
   }
 
   &--padding-0px {
     padding-left: 0px;
     padding-right: 0px;
   }
+
   &__h1 {
     font-weight: 1000 !important;
     font-size: 50px !important;
@@ -25,7 +38,7 @@
     letter-spacing: 2px;
     color: white;
     &--fontstyle-italic {
-        font-style: italic;
+      font-style: italic;
     }
     &--letterspacing-0px {
       letter-spacing: 0px;
@@ -50,7 +63,8 @@
   bottom: 0;
   left: 0;
   z-index: 15;
-  padding-left: 0px;
+  padding-left: 91px;
+  padding-right: 49px;
   list-style: none;
 }
 
@@ -59,23 +73,32 @@
   font-family: "raleway";
   text-align: unset;
 }
+@media (max-width: 617px) {
+  .abc {
+    padding-left: 38px;
+    padding-right: 2px;
+  }
+}
 
 @media (max-width: 425px) {
+  .abc {
+    padding-left: 5px;
+    padding-right: 20px;
+  }
+  .slider {
+    &__hr {
+      width: 50px;
+      &--marginbottom-5rem {
+        margin-bottom: 0rem !important;
+      }
+    }
 
-    .slider {
-        &__hr {
-            &--marginbottom-5rem {
-                margin-bottom: 0rem !important;
-            }
-        }
+    &__indicators {
+      font-size: 8px;
 
-        &__indicators {
-            
-            font-size: 8px;
-            
-            letter-spacing: 1px;
-        }
-}
+      letter-spacing: 1px;
+    }
+  }
 }
 
 @media (max-width: 1024px) {
@@ -85,16 +108,14 @@
 
   .slider {
     &__hr {
-        &--marginbottom-5rem {
-            margin-bottom: 2rem;
-        }
+      &--marginbottom-5rem {
+        margin-bottom: 2rem;
+      }
     }
   }
 }
 
 .carousel-indicators {
-  // bottom: 62px;
-  // left: 145px;
   justify-content: unset;
   padding-left: 0;
   margin-right: 0;
@@ -104,8 +125,6 @@
 
   li {
     text-indent: 0;
-    //width : 200px;
-    //height : 40px;
     background-color: transparent;
     border-top: none;
     border-bottom: none;
