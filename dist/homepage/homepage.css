@@ -7270,6 +7270,8 @@ a.text-dark:hover, a.text-dark:focus {
   .footer--fontfamily-roboto {
     font-family: "Roboto", sans-serif;
     font-size: 14px; }
+  .footer__icon {
+    font-size: 20px; }
   .footer__p--paddingbottom-16px {
     padding-bottom: 16px; }
   .footer__p--marginbottom-0px {
@@ -7330,8 +7332,17 @@ a.text-dark:hover, a.text-dark:focus {
 .slider__img {
   height: 100%; }
 
-.slider__hr--marginbottom-5rem {
-  margin-bottom: 5rem; }
+.slider__portfolio--textdecoration-underline {
+  padding-bottom: 7px;
+  width: 15px !important;
+  border-bottom: 1px solid #fff; }
+
+.slider__hr {
+  width: 91px;
+  background: white !important;
+  margin-top: 8px; }
+  .slider__hr--marginbottom-5rem {
+    margin-bottom: 5rem; }
 
 .slider--padding-0px {
   padding-left: 0px;
@@ -7369,7 +7380,8 @@ a.text-dark:hover, a.text-dark:focus {
   bottom: 0;
   left: 0;
   z-index: 15;
-  padding-left: 0px;
+  padding-left: 91px;
+  padding-right: 49px;
   list-style: none; }
 
 .carousel-caption {
@@ -7377,9 +7389,19 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "raleway";
   text-align: unset; }
 
+@media (max-width: 617px) {
+  .abc {
+    padding-left: 38px;
+    padding-right: 2px; } }
+
 @media (max-width: 425px) {
-  .slider__hr--marginbottom-5rem {
-    margin-bottom: 0rem !important; }
+  .abc {
+    padding-left: 5px;
+    padding-right: 20px; }
+  .slider__hr {
+    width: 50px; }
+    .slider__hr--marginbottom-5rem {
+      margin-bottom: 0rem !important; }
   .slider__indicators {
     font-size: 8px;
     letter-spacing: 1px; } }
