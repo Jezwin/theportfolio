@@ -7345,7 +7345,8 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: roboto;
   font-size: 13px;
   font-weight: bold;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  color: white; }
   .slider__indicators--fontstyle-italic {
     font-style: italic; }
   .slider__indicators--letterspacing-0px {
@@ -7373,7 +7374,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .carousel-caption {
   bottom: 206px;
-  font-family: "raleway"; }
+  font-family: "raleway";
+  text-align: unset; }
 
 @media (max-width: 425px) {
   .slider__hr--marginbottom-5rem {
