@@ -7024,7 +7024,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 .imagegrid {
-  background: whitesmoke;
+  background: #f8f8f8;
   padding: 80px 0px; }
   .imagegrid--textalign-center {
     text-align: center; }
@@ -7036,11 +7036,11 @@ a.text-dark:hover, a.text-dark:focus {
     padding-bottom: 41px;
     padding-top: 10px; }
   .imagegrid__a {
-    background: black;
+    background: #302e2d;
     color: white;
-    border: 10px solid black;
-    border-left: 70px solid black;
-    border-right: 70px solid black;
+    border: 10px solid #302e2d;
+    border-left: 70px solid #302e2d;
+    border-right: 70px solid #302e2d;
     font-family: roboto;
     font-size: 12px; }
 
@@ -7081,21 +7081,40 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (max-width: 768px) {
   .imagegrid {
-    padding: 5% 0px; }
+    padding: 8% 0px; }
   .grid-container {
-    width: 100%; } }
+    width: 80%; } }
 
 @media (max-width: 425px) {
   .grid-container {
-    width: 100%;
+    width: 90%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "Small Small2" "Big Big " "Big Big" "Horizontal Horizontal" "Vertical Small3" "Vertical Small4"; } }
+    grid-template-areas: "Small Small2" "Big Big " "Big Big" "Horizontal Horizontal" "Vertical Small3" "Vertical Small4"; }
+  .Big {
+    border: 1px solid #f8f8f8; }
+  .Horizontal {
+    border: 1px solid #f8f8f8;
+    border-top: 0px; }
+  .Vertical {
+    border: 1px solid #f8f8f8;
+    border-top: 0px; }
+  .Small {
+    border: 1px solid #f8f8f8;
+    border-bottom: 0px; }
+  .Small4 {
+    border: 1px solid #f8f8f8;
+    border-left: 0px; }
+  .Small3 {
+    border-right: 1px solid #f8f8f8; }
+  .Small2 {
+    border-top: 1px solid #f8f8f8;
+    border-right: 1px solid #f8f8f8; } }
 
 @media (max-width: 375px) {
   .imagegrid__a {
-    border-left: 20px solid black;
-    border-right: 20px solid black; } }
+    border-left: 20px solid #302e2d;
+    border-right: 20px solid #302e2d; } }
 
 .row {
   margin-left: 0px;
@@ -7151,7 +7170,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .benny__sub {
   font-family: "roboto";
-  font-size: 12px; }
+  font-size: 14px;
+  padding: 15px 0px; }
 
 .benny__sign {
   height: 49px;
@@ -7159,7 +7179,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .benny__caption {
   font-family: "raleway";
-  font-size: 35px;
+  font-size: 50px;
   font-weight: bold; }
 
 .benny__content {
@@ -7188,13 +7208,21 @@ a.text-dark:hover, a.text-dark:focus {
   .benny__article {
     padding: 30px 9% !important; } }
 
+@media (max-width: 1199px) {
+  .benny__caption {
+    font-size: 42px; }
+  .benny__sub {
+    padding: 4px 0px;
+    font-size: 12px; } }
+
 .modalyou {
   background: #ECEBE9; }
   .modalyou--padding-0px {
     padding: 0px; }
   .modalyou__sub {
     font-size: 15px;
-    font-family: roboto; }
+    font-family: roboto;
+    color: #5d5c5c; }
   .modalyou__title {
     font-family: 'raleway';
     font-size: 28px;
@@ -7266,12 +7294,15 @@ a.text-dark:hover, a.text-dark:focus {
 
 .footer {
   background: #ECEBE9;
-  color: #242424; }
+  color: #777776; }
   .footer--fontfamily-roboto {
     font-family: "Roboto", sans-serif;
     font-size: 14px; }
+  .footer--fontsize-0px {
+    font-size: 0px; }
   .footer__icon {
-    font-size: 20px; }
+    font-size: 20px;
+    font-family: font-awesome; }
   .footer__p--paddingbottom-16px {
     padding-bottom: 16px; }
   .footer__p--marginbottom-0px {
@@ -7283,6 +7314,7 @@ a.text-dark:hover, a.text-dark:focus {
     display: flex;
     justify-content: center; }
   .footer__caption {
+    color: #252525;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 33px;
@@ -7294,6 +7326,9 @@ a.text-dark:hover, a.text-dark:focus {
   .footer--paddingtopnbottom-xpercent {
     padding-top: 5%;
     padding-bottom: 2%; } }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
 .navbar {
   position: absolute;

@@ -1,14 +1,19 @@
 .footer {
     background: #ECEBE9;
-    color: #242424;
+    color: #777776;
 
     &--fontfamily-roboto {
         font-family: "Roboto", sans-serif;
         font-size: 14px;
     }
 
+    &--fontsize-0px{
+        font-size: 0px;
+    }
+
     &__icon {
         font-size: 20px;
+        font-family: font-awesome;
     }
     
 
@@ -34,6 +39,7 @@
         }
 
     &__caption {
+        color: #252525;
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 33px;

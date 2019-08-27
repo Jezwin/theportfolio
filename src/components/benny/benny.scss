@@ -13,7 +13,8 @@
   }
   &__sub {
     font-family: "roboto";
-    font-size: 12px;
+    font-size: 14px;
+    padding: 15px 0px;
   }
 
 
@@ -25,7 +26,7 @@
 
   &__caption {
     font-family: "raleway";
-    font-size: 35px;
+    font-size: 50px;
     font-weight: bold;
   }
 
@@ -66,6 +67,17 @@
     .benny {
       &__article {
         padding: 30px 9% !important;
+      }
+    }
+  }
+  @media (max-width: 1199px) {
+    .benny {
+      &__caption {
+        font-size: 42px;
+      }
+      &__sub {
+        padding: 4px 0px;
+        font-size: 12px;
       }
     }
   }
